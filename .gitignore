@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+env/
+*.pyc
+.idea/
+uitest.log
+functional_test/mvp/tests/login/.cache/
+log.conf
+nosetests.xml
+pics/
+screenshot/
+/env/
