@@ -1,13 +1,15 @@
-1. Create automated test for testing registerPage of gmail.com
-    Description :
-    a. Input test must be configurable
-    b. Automated test must produce screen shot for every step.
+## Testing Plan
 
-2. Create automated test for headless website testing of registerPage at gmail.com
+## Testing Case
 
-3. Create automated test for performance testing  of registerPage at gmail.com with 10 users concurently
+## Testing Report
 
-4. Make documentation for no 1 until 3
-    a. Testing Plan
-    b. Testing Case
-    c. Testing Report
+## Installation
+* Download PhantomJS driver for windows. 
+* Put on `register-page-headless-test folder`
+* File `phantomjs.exe`
+
+
+## Running
+* `python register-page-headless-test.py`
+

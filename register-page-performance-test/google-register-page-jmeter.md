@@ -2,9 +2,9 @@
 This repository contains any tools or script needed to help performance testing
 
 ## Installation
-1. Download Jmeter from http://jmeter.apache.org/download_jmeter.cgi
+1. Download Jmeter from `http://jmeter.apache.org/download_jmeter.cgi`
 2. Unzip the downloaded package to your preferred folder
-3. Download standard set, extra set and webdriver plugin from http://jmeter-plugins.org/wiki/StandardSet/
+3. Download standard set, extra set and webdriver plugin from `http://jmeter-plugins.org/wiki/StandardSet/`
 4. Extract all plugin inside lib or ext folder, please follow the readme for each plugin
 
 ## Running Test
