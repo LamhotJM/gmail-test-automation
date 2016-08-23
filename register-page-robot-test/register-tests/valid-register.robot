@@ -4,10 +4,11 @@ Documentation     A test suite with a single test for valid register.
 ...               This test has a workflow that is created using keywords in
 ...               the imported resource file.
 Resource          resource.robot
+Test Teardown     Close Browser
 
 *** Test Cases ***
-Valid Register
-    Open Browser To Regsiter Page
+F1.S1.0001.Valid-Register
+    Open Browser To Register Page
     Input FirstName    ${VALID FirstName}
     Input LastName  ${VALID LastName}
     Input GmailAddress  ${VALID GmailAddress}
@@ -20,5 +21,4 @@ Valid Register
     Input RecoveryPhoneNumber  ${VALID RecoveryPhoneNumber}
     Input RecoveryEmailAddress  ${VALID RecoveryEmailAddress}
     Submit RegisterButton
-    submit agree
-    [Teardown]    Close Browser
+    Success Register

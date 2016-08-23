@@ -14,6 +14,17 @@ This repository contains any tools or script needed to help performance testing
 4. Start test by accessing menu Run > Start or clicking on play button in the jmeter toolbar
 
 ##Testing Plan
+
+Environment:
+- Base URL  : `https://accounts.google.com` 
+- Platform  : Windows 10
+
+Tools    : Apache-jmeter-3.0
+
+Exit criteria: All Test Suites are run.
+
+Scope : Tesing Register Gmail (Valid Case)
+
 `curl -X GET --header 'Accept: application/json'`
 `https://accounts.google.com/signup`
 

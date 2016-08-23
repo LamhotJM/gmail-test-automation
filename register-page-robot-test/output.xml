@@ -1,0 +1,2350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20160823 11:37:21.299" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<suite source="D:\gmail-test-automation\register-page-robot-test\register-tests" id="s1" name="Register-Tests">
+<suite source="D:\gmail-test-automation\register-page-robot-test\register-tests\invalid-register.robot" id="s1-s1" name="Invalid-Register">
+<test id="s1-s1-t1" name="F1.S2.0002.Invalid-Register-BlankAll">
+<kw name="Open Browser To Register Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:22.271" level="INFO">Opening browser 'Firefox' to base url 'http://accounts.google.com/SignUp?'</msg>
+<status status="PASS" endtime="20160823 11:37:33.204" starttime="20160823 11:37:22.270"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160823 11:37:33.312" starttime="20160823 11:37:33.205"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:37:33.313" starttime="20160823 11:37:33.312"></status>
+</kw>
+<kw name="Register Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Create your Google Account</arg>
+</arguments>
+<msg timestamp="20160823 11:37:33.360" level="INFO">Page title is 'Create your Google Account'.</msg>
+<status status="PASS" endtime="20160823 11:37:33.360" starttime="20160823 11:37:33.314"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:33.361" starttime="20160823 11:37:33.314"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:33.361" starttime="20160823 11:37:22.270"></status>
+</kw>
+<kw name="Input FirstName" library="resource">
+<arguments>
+<arg>${EMPTY}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=FirstName</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:33.362" level="INFO">Typing text '' into text field 'name=FirstName'</msg>
+<status status="PASS" endtime="20160823 11:37:33.570" starttime="20160823 11:37:33.362"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:33.571" starttime="20160823 11:37:33.361"></status>
+</kw>
+<kw name="Input LastName" library="resource">
+<arguments>
+<arg>${EMPTY}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=LastName</arg>
+<arg>${LastName}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:33.572" level="INFO">Typing text '' into text field 'name=LastName'</msg>
+<status status="PASS" endtime="20160823 11:37:33.712" starttime="20160823 11:37:33.572"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:33.712" starttime="20160823 11:37:33.571"></status>
+</kw>
+<kw name="Input GmailAddress" library="resource">
+<arguments>
+<arg>${EMPTY}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=GmailAddress</arg>
+<arg>${GmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:33.714" level="INFO">Typing text '' into text field 'name=GmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:37:33.879" starttime="20160823 11:37:33.713"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:33.879" starttime="20160823 11:37:33.712"></status>
+</kw>
+<kw name="Input Password" library="resource">
+<arguments>
+<arg>${EMPTY}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=Passwd</arg>
+<arg>${Passwd}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:33.881" level="INFO">Typing text '' into text field 'name=Passwd'</msg>
+<status status="PASS" endtime="20160823 11:37:34.099" starttime="20160823 11:37:33.880"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:34.099" starttime="20160823 11:37:33.880"></status>
+</kw>
+<kw name="Input PasswordAgain" library="resource">
+<arguments>
+<arg>${EMPTY}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=PasswdAgain</arg>
+<arg>${PasswdAgain}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:34.101" level="INFO">Typing text '' into text field 'name=PasswdAgain'</msg>
+<status status="PASS" endtime="20160823 11:37:34.262" starttime="20160823 11:37:34.100"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:34.262" starttime="20160823 11:37:34.100"></status>
+</kw>
+<kw name="Input BirthDay" library="resource">
+<arguments>
+<arg>${EMPTY}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthDay</arg>
+<arg>${BirthDay}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:34.264" level="INFO">Typing text '' into text field 'name=BirthDay'</msg>
+<status status="PASS" endtime="20160823 11:37:34.396" starttime="20160823 11:37:34.264"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:34.396" starttime="20160823 11:37:34.263"></status>
+</kw>
+<kw name="Input BirthMonth" library="resource">
+<arguments>
+<arg>${EMPTY}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@role='listbox']</arg>
+<arg>${BirthMonth}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:37:34.468" starttime="20160823 11:37:34.397"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:34.468" starttime="20160823 11:37:34.397"></status>
+</kw>
+<kw name="Input BirthYear" library="resource">
+<arguments>
+<arg>${EMPTY}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthYear</arg>
+<arg>${BirthYear}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:34.470" level="INFO">Typing text '' into text field 'name=BirthYear'</msg>
+<status status="PASS" endtime="20160823 11:37:34.562" starttime="20160823 11:37:34.469"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:34.562" starttime="20160823 11:37:34.469"></status>
+</kw>
+<kw name="Input Gender" library="resource">
+<arguments>
+<arg>${EMPTY}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@aria-activedescendant=':d']</arg>
+<arg>${Gender}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:37:34.621" starttime="20160823 11:37:34.563"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:34.622" starttime="20160823 11:37:34.562"></status>
+</kw>
+<kw name="Input RecoveryPhoneNumber" library="resource">
+<arguments>
+<arg>${EMPTY}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryPhoneNumber</arg>
+<arg>${RecoveryPhoneNumber}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:34.623" level="INFO">Typing text '' into text field 'name=RecoveryPhoneNumber'</msg>
+<status status="PASS" endtime="20160823 11:37:34.789" starttime="20160823 11:37:34.622"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:34.789" starttime="20160823 11:37:34.622"></status>
+</kw>
+<kw name="Input RecoveryEmailAddress" library="resource">
+<arguments>
+<arg>${EMPTY}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryEmailAddress</arg>
+<arg>${RecoveryEmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:34.791" level="INFO">Typing text '' into text field 'name=RecoveryEmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:37:34.974" starttime="20160823 11:37:34.791"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:34.975" starttime="20160823 11:37:34.790"></status>
+</kw>
+<kw name="Submit RegisterButton" library="resource">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=submitbutton</arg>
+</arguments>
+<msg timestamp="20160823 11:37:34.977" level="INFO">Clicking element 'name=submitbutton'.</msg>
+<status status="PASS" endtime="20160823 11:37:35.171" starttime="20160823 11:37:34.976"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:35.171" starttime="20160823 11:37:34.975"></status>
+</kw>
+<kw name="Validation Blank All Fields" library="resource">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>id=errormsg_0_FirstName</arg>
+<arg>${Blank Message}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:35.191" level="INFO">Current page contains element 'id=errormsg_0_FirstName'.</msg>
+<status status="PASS" endtime="20160823 11:37:35.191" starttime="20160823 11:37:35.172"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>id=errormsg_0_LastName</arg>
+<arg>${Blank Message}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:35.218" level="INFO">Current page contains element 'id=errormsg_0_LastName'.</msg>
+<status status="PASS" endtime="20160823 11:37:35.218" starttime="20160823 11:37:35.191"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>id=errormsg_0_GmailAddress</arg>
+<arg>${Blank Message}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:35.242" level="INFO">Current page contains element 'id=errormsg_0_GmailAddress'.</msg>
+<status status="PASS" endtime="20160823 11:37:35.242" starttime="20160823 11:37:35.219"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>id=errormsg_0_Passwd</arg>
+<arg>${Blank Message}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:35.278" level="INFO">Current page contains element 'id=errormsg_0_Passwd'.</msg>
+<status status="PASS" endtime="20160823 11:37:35.278" starttime="20160823 11:37:35.242"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>id=errormsg_0_BirthMonth</arg>
+<arg>${Blank Message}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:35.299" level="INFO">Current page contains element 'id=errormsg_0_BirthMonth'.</msg>
+<status status="PASS" endtime="20160823 11:37:35.299" starttime="20160823 11:37:35.278"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>id=errormsg_0_BirthDay</arg>
+<arg>${Blank Message}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:35.319" level="INFO">Current page contains element 'id=errormsg_0_BirthDay'.</msg>
+<status status="PASS" endtime="20160823 11:37:35.320" starttime="20160823 11:37:35.300"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>${Blank Message}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:35.397" level="INFO">Current page contains text 'You can't leave this empty.'.</msg>
+<status status="PASS" endtime="20160823 11:37:35.398" starttime="20160823 11:37:35.320"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:35.398" starttime="20160823 11:37:35.171"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160823 11:37:35.617" starttime="20160823 11:37:35.398"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:35.618" critical="yes" starttime="20160823 11:37:22.269"></status>
+</test>
+<test id="s1-s1-t2" name="F1.S2.0003.Invalid-Password-Unmatch">
+<kw name="Open Browser To Register Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:35.620" level="INFO">Opening browser 'Firefox' to base url 'http://accounts.google.com/SignUp?'</msg>
+<status status="PASS" endtime="20160823 11:37:46.489" starttime="20160823 11:37:35.620"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160823 11:37:46.544" starttime="20160823 11:37:46.489"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:37:46.545" starttime="20160823 11:37:46.544"></status>
+</kw>
+<kw name="Register Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Create your Google Account</arg>
+</arguments>
+<msg timestamp="20160823 11:37:46.574" level="INFO">Page title is 'Create your Google Account'.</msg>
+<status status="PASS" endtime="20160823 11:37:46.575" starttime="20160823 11:37:46.546"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:46.575" starttime="20160823 11:37:46.545"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:46.575" starttime="20160823 11:37:35.619"></status>
+</kw>
+<kw name="Input FirstName" library="resource">
+<arguments>
+<arg>${VALID FirstName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=FirstName</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:46.577" level="INFO">Typing text 'LoremIpsum' into text field 'name=FirstName'</msg>
+<status status="PASS" endtime="20160823 11:37:46.859" starttime="20160823 11:37:46.576"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:46.859" starttime="20160823 11:37:46.576"></status>
+</kw>
+<kw name="Input LastName" library="resource">
+<arguments>
+<arg>${VALID LastName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=LastName</arg>
+<arg>${LastName}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:46.861" level="INFO">Typing text 'LoremIpsum987654321' into text field 'name=LastName'</msg>
+<status status="PASS" endtime="20160823 11:37:47.943" starttime="20160823 11:37:46.861"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:47.943" starttime="20160823 11:37:46.860"></status>
+</kw>
+<kw name="Input GmailAddress" library="resource">
+<arguments>
+<arg>${VALID GmailAddress}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=GmailAddress</arg>
+<arg>${GmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:47.944" level="INFO">Typing text 'LoremIpsum12345678912345678RandomString' into text field 'name=GmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:37:48.482" starttime="20160823 11:37:47.944"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:48.482" starttime="20160823 11:37:47.943"></status>
+</kw>
+<kw name="Input Password" library="resource">
+<arguments>
+<arg>123456</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=Passwd</arg>
+<arg>${Passwd}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:48.484" level="INFO">Typing text '123456' into text field 'name=Passwd'</msg>
+<status status="PASS" endtime="20160823 11:37:48.768" starttime="20160823 11:37:48.483"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:48.769" starttime="20160823 11:37:48.483"></status>
+</kw>
+<kw name="Input PasswordAgain" library="resource">
+<arguments>
+<arg>${VALID PasswordAgain}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=PasswdAgain</arg>
+<arg>${PasswdAgain}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:48.771" level="INFO">Typing text 'test123@Test' into text field 'name=PasswdAgain'</msg>
+<status status="PASS" endtime="20160823 11:37:49.033" starttime="20160823 11:37:48.770"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:49.033" starttime="20160823 11:37:48.769"></status>
+</kw>
+<kw name="Input BirthDay" library="resource">
+<arguments>
+<arg>${VALID BirthDay}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthDay</arg>
+<arg>${BirthDay}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:49.035" level="INFO">Typing text '24' into text field 'name=BirthDay'</msg>
+<status status="PASS" endtime="20160823 11:37:49.171" starttime="20160823 11:37:49.034"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:49.171" starttime="20160823 11:37:49.033"></status>
+</kw>
+<kw name="Input BirthMonth" library="resource">
+<arguments>
+<arg>${VALID BirthMonth}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@role='listbox']</arg>
+<arg>${BirthMonth}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:37:49.287" starttime="20160823 11:37:49.172"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:49.287" starttime="20160823 11:37:49.172"></status>
+</kw>
+<kw name="Input BirthYear" library="resource">
+<arguments>
+<arg>${VALID BirthYear}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthYear</arg>
+<arg>${BirthYear}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:49.289" level="INFO">Typing text '1994' into text field 'name=BirthYear'</msg>
+<status status="PASS" endtime="20160823 11:37:49.425" starttime="20160823 11:37:49.288"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:49.426" starttime="20160823 11:37:49.287"></status>
+</kw>
+<kw name="Input Gender" library="resource">
+<arguments>
+<arg>${valid Gender}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@aria-activedescendant=':d']</arg>
+<arg>${Gender}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:37:49.524" starttime="20160823 11:37:49.427"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:49.524" starttime="20160823 11:37:49.426"></status>
+</kw>
+<kw name="Input RecoveryPhoneNumber" library="resource">
+<arguments>
+<arg>${VALID RecoveryPhoneNumber}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryPhoneNumber</arg>
+<arg>${RecoveryPhoneNumber}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:49.526" level="INFO">Typing text '42334423424' into text field 'name=RecoveryPhoneNumber'</msg>
+<status status="PASS" endtime="20160823 11:37:49.953" starttime="20160823 11:37:49.526"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:49.954" starttime="20160823 11:37:49.525"></status>
+</kw>
+<kw name="Input RecoveryEmailAddress" library="resource">
+<arguments>
+<arg>${VALID RecoveryEmailAddress}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryEmailAddress</arg>
+<arg>${RecoveryEmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:49.955" level="INFO">Typing text 'test@gmail.com' into text field 'name=RecoveryEmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:37:50.258" starttime="20160823 11:37:49.955"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:50.258" starttime="20160823 11:37:49.954"></status>
+</kw>
+<kw name="Submit RegisterButton" library="resource">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=submitbutton</arg>
+</arguments>
+<msg timestamp="20160823 11:37:50.259" level="INFO">Clicking element 'name=submitbutton'.</msg>
+<status status="PASS" endtime="20160823 11:37:50.499" starttime="20160823 11:37:50.259"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:50.500" starttime="20160823 11:37:50.258"></status>
+</kw>
+<kw name="Validation PasswordUnmatch" library="resource">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>These passwords don't match. Try again?</arg>
+</arguments>
+<msg timestamp="20160823 11:37:50.628" level="INFO">Current page contains text 'These passwords don't match. Try again?'.</msg>
+<status status="PASS" endtime="20160823 11:37:50.628" starttime="20160823 11:37:50.500"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:50.628" starttime="20160823 11:37:50.500"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160823 11:37:51.055" starttime="20160823 11:37:50.628"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:37:51.055" critical="yes" starttime="20160823 11:37:35.619"></status>
+</test>
+<test id="s1-s1-t3" name="F1.S2.0004.Invalid-GmailAddress-already-taken">
+<kw name="Open Browser To Register Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20160823 11:37:51.058" level="INFO">Opening browser 'Firefox' to base url 'http://accounts.google.com/SignUp?'</msg>
+<status status="PASS" endtime="20160823 11:38:01.868" starttime="20160823 11:37:51.057"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160823 11:38:01.943" starttime="20160823 11:38:01.869"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:38:01.944" starttime="20160823 11:38:01.943"></status>
+</kw>
+<kw name="Register Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Create your Google Account</arg>
+</arguments>
+<msg timestamp="20160823 11:38:01.983" level="INFO">Page title is 'Create your Google Account'.</msg>
+<status status="PASS" endtime="20160823 11:38:01.984" starttime="20160823 11:38:01.945"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:01.984" starttime="20160823 11:38:01.945"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:01.985" starttime="20160823 11:37:51.057"></status>
+</kw>
+<kw name="Input FirstName" library="resource">
+<arguments>
+<arg>${VALID FirstName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=FirstName</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:01.987" level="INFO">Typing text 'LoremIpsum' into text field 'name=FirstName'</msg>
+<status status="PASS" endtime="20160823 11:38:02.286" starttime="20160823 11:38:01.987"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:02.286" starttime="20160823 11:38:01.986"></status>
+</kw>
+<kw name="Input LastName" library="resource">
+<arguments>
+<arg>${VALID LastName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=LastName</arg>
+<arg>${LastName}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:02.288" level="INFO">Typing text 'LoremIpsum987654321' into text field 'name=LastName'</msg>
+<status status="PASS" endtime="20160823 11:38:03.307" starttime="20160823 11:38:02.288"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:03.307" starttime="20160823 11:38:02.287"></status>
+</kw>
+<kw name="Input GmailAddress" library="resource">
+<arguments>
+<arg>lamhot</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=GmailAddress</arg>
+<arg>${GmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:03.308" level="INFO">Typing text 'lamhot' into text field 'name=GmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:38:03.505" starttime="20160823 11:38:03.308"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:03.505" starttime="20160823 11:38:03.308"></status>
+</kw>
+<kw name="Input Password" library="resource">
+<arguments>
+<arg>${VALID Password}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=Passwd</arg>
+<arg>${Passwd}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:03.507" level="INFO">Typing text 'test123@Test' into text field 'name=Passwd'</msg>
+<status status="PASS" endtime="20160823 11:38:03.807" starttime="20160823 11:38:03.506"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:03.808" starttime="20160823 11:38:03.505"></status>
+</kw>
+<kw name="Input PasswordAgain" library="resource">
+<arguments>
+<arg>${VALID PasswordAgain}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=PasswdAgain</arg>
+<arg>${PasswdAgain}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:03.810" level="INFO">Typing text 'test123@Test' into text field 'name=PasswdAgain'</msg>
+<status status="PASS" endtime="20160823 11:38:04.265" starttime="20160823 11:38:03.809"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:04.265" starttime="20160823 11:38:03.808"></status>
+</kw>
+<kw name="Input BirthDay" library="resource">
+<arguments>
+<arg>${VALID BirthDay}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthDay</arg>
+<arg>${BirthDay}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:04.266" level="INFO">Typing text '24' into text field 'name=BirthDay'</msg>
+<status status="PASS" endtime="20160823 11:38:04.407" starttime="20160823 11:38:04.266"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:04.407" starttime="20160823 11:38:04.265"></status>
+</kw>
+<kw name="Input BirthMonth" library="resource">
+<arguments>
+<arg>${VALID BirthMonth}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@role='listbox']</arg>
+<arg>${BirthMonth}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:38:04.516" starttime="20160823 11:38:04.408"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:04.517" starttime="20160823 11:38:04.407"></status>
+</kw>
+<kw name="Input BirthYear" library="resource">
+<arguments>
+<arg>${VALID BirthYear}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthYear</arg>
+<arg>${BirthYear}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:04.519" level="INFO">Typing text '1994' into text field 'name=BirthYear'</msg>
+<status status="PASS" endtime="20160823 11:38:04.622" starttime="20160823 11:38:04.518"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:04.622" starttime="20160823 11:38:04.517"></status>
+</kw>
+<kw name="Input Gender" library="resource">
+<arguments>
+<arg>${valid Gender}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@aria-activedescendant=':d']</arg>
+<arg>${Gender}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:38:04.704" starttime="20160823 11:38:04.623"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:04.705" starttime="20160823 11:38:04.623"></status>
+</kw>
+<kw name="Input RecoveryPhoneNumber" library="resource">
+<arguments>
+<arg>${VALID RecoveryPhoneNumber}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryPhoneNumber</arg>
+<arg>${RecoveryPhoneNumber}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:04.706" level="INFO">Typing text '42334423424' into text field 'name=RecoveryPhoneNumber'</msg>
+<status status="PASS" endtime="20160823 11:38:04.991" starttime="20160823 11:38:04.706"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:04.991" starttime="20160823 11:38:04.705"></status>
+</kw>
+<kw name="Input RecoveryEmailAddress" library="resource">
+<arguments>
+<arg>${VALID RecoveryEmailAddress}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryEmailAddress</arg>
+<arg>${RecoveryEmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:04.993" level="INFO">Typing text 'test@gmail.com' into text field 'name=RecoveryEmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:38:05.292" starttime="20160823 11:38:04.992"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:05.292" starttime="20160823 11:38:04.992"></status>
+</kw>
+<kw name="Submit RegisterButton" library="resource">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=submitbutton</arg>
+</arguments>
+<msg timestamp="20160823 11:38:05.293" level="INFO">Clicking element 'name=submitbutton'.</msg>
+<status status="PASS" endtime="20160823 11:38:05.479" starttime="20160823 11:38:05.293"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:05.479" starttime="20160823 11:38:05.292"></status>
+</kw>
+<kw name="Validation UsernameIsTaken" library="resource">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>That username is taken. Try another.</arg>
+</arguments>
+<msg timestamp="20160823 11:38:05.539" level="INFO">Current page contains text 'That username is taken. Try another.'.</msg>
+<status status="PASS" endtime="20160823 11:38:05.539" starttime="20160823 11:38:05.480"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:05.540" starttime="20160823 11:38:05.479"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160823 11:38:05.787" starttime="20160823 11:38:05.540"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:05.787" critical="yes" starttime="20160823 11:37:51.056"></status>
+</test>
+<test id="s1-s1-t4" name="F1.S2.0005.Invalid-Password-PasswordLessThan8Characters">
+<kw name="Open Browser To Register Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:05.790" level="INFO">Opening browser 'Firefox' to base url 'http://accounts.google.com/SignUp?'</msg>
+<status status="PASS" endtime="20160823 11:38:14.993" starttime="20160823 11:38:05.789"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160823 11:38:15.043" starttime="20160823 11:38:14.993"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:38:15.044" starttime="20160823 11:38:15.043"></status>
+</kw>
+<kw name="Register Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Create your Google Account</arg>
+</arguments>
+<msg timestamp="20160823 11:38:15.097" level="INFO">Page title is 'Create your Google Account'.</msg>
+<status status="PASS" endtime="20160823 11:38:15.098" starttime="20160823 11:38:15.044"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:15.098" starttime="20160823 11:38:15.044"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:15.098" starttime="20160823 11:38:05.789"></status>
+</kw>
+<kw name="Input FirstName" library="resource">
+<arguments>
+<arg>${VALID FirstName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=FirstName</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:15.100" level="INFO">Typing text 'LoremIpsum' into text field 'name=FirstName'</msg>
+<status status="PASS" endtime="20160823 11:38:15.426" starttime="20160823 11:38:15.099"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:15.426" starttime="20160823 11:38:15.098"></status>
+</kw>
+<kw name="Input LastName" library="resource">
+<arguments>
+<arg>${VALID LastName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=LastName</arg>
+<arg>${LastName}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:15.428" level="INFO">Typing text 'LoremIpsum987654321' into text field 'name=LastName'</msg>
+<status status="PASS" endtime="20160823 11:38:16.743" starttime="20160823 11:38:15.428"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:16.743" starttime="20160823 11:38:15.427"></status>
+</kw>
+<kw name="Input GmailAddress" library="resource">
+<arguments>
+<arg>${VALID GmailAddress}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=GmailAddress</arg>
+<arg>${GmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:16.744" level="INFO">Typing text 'LoremIpsum12345678912345678RandomString' into text field 'name=GmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:38:17.270" starttime="20160823 11:38:16.744"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:17.270" starttime="20160823 11:38:16.744"></status>
+</kw>
+<kw name="Input Password" library="resource">
+<arguments>
+<arg>1234567</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=Passwd</arg>
+<arg>${Passwd}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:17.271" level="INFO">Typing text '1234567' into text field 'name=Passwd'</msg>
+<status status="PASS" endtime="20160823 11:38:17.472" starttime="20160823 11:38:17.271"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:17.473" starttime="20160823 11:38:17.270"></status>
+</kw>
+<kw name="Input PasswordAgain" library="resource">
+<arguments>
+<arg>1234567</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=PasswdAgain</arg>
+<arg>${PasswdAgain}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:17.474" level="INFO">Typing text '1234567' into text field 'name=PasswdAgain'</msg>
+<status status="PASS" endtime="20160823 11:38:17.649" starttime="20160823 11:38:17.473"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:17.650" starttime="20160823 11:38:17.473"></status>
+</kw>
+<kw name="Input BirthDay" library="resource">
+<arguments>
+<arg>${VALID BirthDay}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthDay</arg>
+<arg>${BirthDay}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:17.651" level="INFO">Typing text '24' into text field 'name=BirthDay'</msg>
+<status status="PASS" endtime="20160823 11:38:17.760" starttime="20160823 11:38:17.651"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:17.760" starttime="20160823 11:38:17.650"></status>
+</kw>
+<kw name="Input BirthMonth" library="resource">
+<arguments>
+<arg>${VALID BirthMonth}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@role='listbox']</arg>
+<arg>${BirthMonth}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:38:17.846" starttime="20160823 11:38:17.761"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:17.846" starttime="20160823 11:38:17.760"></status>
+</kw>
+<kw name="Input BirthYear" library="resource">
+<arguments>
+<arg>${VALID BirthYear}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthYear</arg>
+<arg>${BirthYear}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:17.848" level="INFO">Typing text '1994' into text field 'name=BirthYear'</msg>
+<status status="PASS" endtime="20160823 11:38:17.997" starttime="20160823 11:38:17.847"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:17.998" starttime="20160823 11:38:17.847"></status>
+</kw>
+<kw name="Input Gender" library="resource">
+<arguments>
+<arg>${valid Gender}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@aria-activedescendant=':d']</arg>
+<arg>${Gender}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:38:18.160" starttime="20160823 11:38:17.999"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:18.161" starttime="20160823 11:38:17.998"></status>
+</kw>
+<kw name="Input RecoveryPhoneNumber" library="resource">
+<arguments>
+<arg>${VALID RecoveryPhoneNumber}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryPhoneNumber</arg>
+<arg>${RecoveryPhoneNumber}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:18.162" level="INFO">Typing text '42334423424' into text field 'name=RecoveryPhoneNumber'</msg>
+<status status="PASS" endtime="20160823 11:38:18.522" starttime="20160823 11:38:18.162"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:18.522" starttime="20160823 11:38:18.161"></status>
+</kw>
+<kw name="Input RecoveryEmailAddress" library="resource">
+<arguments>
+<arg>${VALID RecoveryEmailAddress}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryEmailAddress</arg>
+<arg>${RecoveryEmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:18.523" level="INFO">Typing text 'test@gmail.com' into text field 'name=RecoveryEmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:38:18.749" starttime="20160823 11:38:18.523"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:18.749" starttime="20160823 11:38:18.523"></status>
+</kw>
+<kw name="Submit RegisterButton" library="resource">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=submitbutton</arg>
+</arguments>
+<msg timestamp="20160823 11:38:18.751" level="INFO">Clicking element 'name=submitbutton'.</msg>
+<status status="PASS" endtime="20160823 11:38:18.914" starttime="20160823 11:38:18.750"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:18.915" starttime="20160823 11:38:18.750"></status>
+</kw>
+<kw name="Validation PasswordLessThan8Characters" library="resource">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Short passwords are easy to guess. Try one with at least 8 characters.</arg>
+</arguments>
+<msg timestamp="20160823 11:38:18.973" level="INFO">Current page contains text 'Short passwords are easy to guess. Try one with at least 8 characters.'.</msg>
+<status status="PASS" endtime="20160823 11:38:18.974" starttime="20160823 11:38:18.916"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:18.974" starttime="20160823 11:38:18.915"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160823 11:38:19.233" starttime="20160823 11:38:18.974"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:19.233" critical="yes" starttime="20160823 11:38:05.788"></status>
+</test>
+<test id="s1-s1-t5" name="F1.S2.0006.Invalid-Unsecure-Password">
+<kw name="Open Browser To Register Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:19.235" level="INFO">Opening browser 'Firefox' to base url 'http://accounts.google.com/SignUp?'</msg>
+<status status="PASS" endtime="20160823 11:38:29.867" starttime="20160823 11:38:19.235"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160823 11:38:29.901" starttime="20160823 11:38:29.867"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:38:29.902" starttime="20160823 11:38:29.902"></status>
+</kw>
+<kw name="Register Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Create your Google Account</arg>
+</arguments>
+<msg timestamp="20160823 11:38:29.960" level="INFO">Page title is 'Create your Google Account'.</msg>
+<status status="PASS" endtime="20160823 11:38:29.960" starttime="20160823 11:38:29.903"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:29.961" starttime="20160823 11:38:29.903"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:29.961" starttime="20160823 11:38:19.235"></status>
+</kw>
+<kw name="Input FirstName" library="resource">
+<arguments>
+<arg>${VALID FirstName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=FirstName</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:29.962" level="INFO">Typing text 'LoremIpsum' into text field 'name=FirstName'</msg>
+<status status="PASS" endtime="20160823 11:38:30.251" starttime="20160823 11:38:29.962"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:30.251" starttime="20160823 11:38:29.961"></status>
+</kw>
+<kw name="Input LastName" library="resource">
+<arguments>
+<arg>${VALID LastName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=LastName</arg>
+<arg>${LastName}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:30.253" level="INFO">Typing text 'LoremIpsum987654321' into text field 'name=LastName'</msg>
+<status status="PASS" endtime="20160823 11:38:31.505" starttime="20160823 11:38:30.252"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:31.506" starttime="20160823 11:38:30.252"></status>
+</kw>
+<kw name="Input GmailAddress" library="resource">
+<arguments>
+<arg>${VALID GmailAddress}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=GmailAddress</arg>
+<arg>${GmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:31.507" level="INFO">Typing text 'LoremIpsum12345678912345678RandomString' into text field 'name=GmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:38:32.104" starttime="20160823 11:38:31.506"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:32.104" starttime="20160823 11:38:31.506"></status>
+</kw>
+<kw name="Input Password" library="resource">
+<arguments>
+<arg>12345678</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=Passwd</arg>
+<arg>${Passwd}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:32.106" level="INFO">Typing text '12345678' into text field 'name=Passwd'</msg>
+<status status="PASS" endtime="20160823 11:38:32.445" starttime="20160823 11:38:32.105"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:32.446" starttime="20160823 11:38:32.105"></status>
+</kw>
+<kw name="Input PasswordAgain" library="resource">
+<arguments>
+<arg>12345678</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=PasswdAgain</arg>
+<arg>${PasswdAgain}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:32.448" level="INFO">Typing text '12345678' into text field 'name=PasswdAgain'</msg>
+<status status="PASS" endtime="20160823 11:38:32.654" starttime="20160823 11:38:32.447"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:32.655" starttime="20160823 11:38:32.446"></status>
+</kw>
+<kw name="Input BirthDay" library="resource">
+<arguments>
+<arg>${VALID BirthDay}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthDay</arg>
+<arg>${BirthDay}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:32.656" level="INFO">Typing text '24' into text field 'name=BirthDay'</msg>
+<status status="PASS" endtime="20160823 11:38:32.757" starttime="20160823 11:38:32.656"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:32.757" starttime="20160823 11:38:32.655"></status>
+</kw>
+<kw name="Input BirthMonth" library="resource">
+<arguments>
+<arg>${VALID BirthMonth}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@role='listbox']</arg>
+<arg>${BirthMonth}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:38:32.841" starttime="20160823 11:38:32.758"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:32.842" starttime="20160823 11:38:32.757"></status>
+</kw>
+<kw name="Input BirthYear" library="resource">
+<arguments>
+<arg>${VALID BirthYear}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthYear</arg>
+<arg>${BirthYear}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:32.844" level="INFO">Typing text '1994' into text field 'name=BirthYear'</msg>
+<status status="PASS" endtime="20160823 11:38:32.985" starttime="20160823 11:38:32.843"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:32.985" starttime="20160823 11:38:32.842"></status>
+</kw>
+<kw name="Input Gender" library="resource">
+<arguments>
+<arg>${valid Gender}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@aria-activedescendant=':d']</arg>
+<arg>${Gender}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:38:33.065" starttime="20160823 11:38:32.986"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:33.066" starttime="20160823 11:38:32.985"></status>
+</kw>
+<kw name="Input RecoveryPhoneNumber" library="resource">
+<arguments>
+<arg>${VALID RecoveryPhoneNumber}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryPhoneNumber</arg>
+<arg>${RecoveryPhoneNumber}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:33.067" level="INFO">Typing text '42334423424' into text field 'name=RecoveryPhoneNumber'</msg>
+<status status="PASS" endtime="20160823 11:38:33.297" starttime="20160823 11:38:33.067"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:33.298" starttime="20160823 11:38:33.066"></status>
+</kw>
+<kw name="Input RecoveryEmailAddress" library="resource">
+<arguments>
+<arg>${VALID RecoveryEmailAddress}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryEmailAddress</arg>
+<arg>${RecoveryEmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:33.299" level="INFO">Typing text 'test@gmail.com' into text field 'name=RecoveryEmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:38:33.538" starttime="20160823 11:38:33.299"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:33.538" starttime="20160823 11:38:33.298"></status>
+</kw>
+<kw name="Submit RegisterButton" library="resource">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=submitbutton</arg>
+</arguments>
+<msg timestamp="20160823 11:38:33.539" level="INFO">Clicking element 'name=submitbutton'.</msg>
+<status status="PASS" endtime="20160823 11:38:33.693" starttime="20160823 11:38:33.539"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:33.694" starttime="20160823 11:38:33.539"></status>
+</kw>
+<kw name="Validation WeakPassword" library="resource">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Common words are easy to guess. Try again?</arg>
+</arguments>
+<msg timestamp="20160823 11:38:33.754" level="INFO">Current page contains text 'Common words are easy to guess. Try again?'.</msg>
+<status status="PASS" endtime="20160823 11:38:33.754" starttime="20160823 11:38:33.695"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:33.754" starttime="20160823 11:38:33.694"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160823 11:38:33.997" starttime="20160823 11:38:33.755"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:33.998" critical="yes" starttime="20160823 11:38:19.234"></status>
+</test>
+<test id="s1-s1-t6" name="F1.S2.0007.Invalid-BirthDayandYear">
+<kw name="Open Browser To Register Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:34.001" level="INFO">Opening browser 'Firefox' to base url 'http://accounts.google.com/SignUp?'</msg>
+<status status="PASS" endtime="20160823 11:38:45.467" starttime="20160823 11:38:34.000"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160823 11:38:45.518" starttime="20160823 11:38:45.468"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:38:45.519" starttime="20160823 11:38:45.519"></status>
+</kw>
+<kw name="Register Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Create your Google Account</arg>
+</arguments>
+<msg timestamp="20160823 11:38:45.553" level="INFO">Page title is 'Create your Google Account'.</msg>
+<status status="PASS" endtime="20160823 11:38:45.554" starttime="20160823 11:38:45.520"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:45.554" starttime="20160823 11:38:45.520"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:45.555" starttime="20160823 11:38:34.000"></status>
+</kw>
+<kw name="Input FirstName" library="resource">
+<arguments>
+<arg>${VALID FirstName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=FirstName</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:45.556" level="INFO">Typing text 'LoremIpsum' into text field 'name=FirstName'</msg>
+<status status="PASS" endtime="20160823 11:38:45.884" starttime="20160823 11:38:45.555"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:45.885" starttime="20160823 11:38:45.555"></status>
+</kw>
+<kw name="Input LastName" library="resource">
+<arguments>
+<arg>${VALID LastName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=LastName</arg>
+<arg>${LastName}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:45.886" level="INFO">Typing text 'LoremIpsum987654321' into text field 'name=LastName'</msg>
+<status status="PASS" endtime="20160823 11:38:46.865" starttime="20160823 11:38:45.886"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:46.865" starttime="20160823 11:38:45.885"></status>
+</kw>
+<kw name="Input GmailAddress" library="resource">
+<arguments>
+<arg>${VALID GmailAddress}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=GmailAddress</arg>
+<arg>${GmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:46.866" level="INFO">Typing text 'LoremIpsum12345678912345678RandomString' into text field 'name=GmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:38:47.478" starttime="20160823 11:38:46.865"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:47.478" starttime="20160823 11:38:46.865"></status>
+</kw>
+<kw name="Input Password" library="resource">
+<arguments>
+<arg>${VALID Password}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=Passwd</arg>
+<arg>${Passwd}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:47.480" level="INFO">Typing text 'test123@Test' into text field 'name=Passwd'</msg>
+<status status="PASS" endtime="20160823 11:38:47.813" starttime="20160823 11:38:47.479"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:47.813" starttime="20160823 11:38:47.478"></status>
+</kw>
+<kw name="Input PasswordAgain" library="resource">
+<arguments>
+<arg>${VALID PasswordAgain}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=PasswdAgain</arg>
+<arg>${PasswdAgain}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:47.815" level="INFO">Typing text 'test123@Test' into text field 'name=PasswdAgain'</msg>
+<status status="PASS" endtime="20160823 11:38:48.050" starttime="20160823 11:38:47.814"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:48.051" starttime="20160823 11:38:47.813"></status>
+</kw>
+<kw name="Input BirthDay" library="resource">
+<arguments>
+<arg>-1</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthDay</arg>
+<arg>${BirthDay}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:48.052" level="INFO">Typing text '-1' into text field 'name=BirthDay'</msg>
+<status status="PASS" endtime="20160823 11:38:48.148" starttime="20160823 11:38:48.051"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:48.149" starttime="20160823 11:38:48.051"></status>
+</kw>
+<kw name="Input BirthMonth" library="resource">
+<arguments>
+<arg>${VALID BirthMonth}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@role='listbox']</arg>
+<arg>${BirthMonth}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:38:48.251" starttime="20160823 11:38:48.150"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:48.252" starttime="20160823 11:38:48.149"></status>
+</kw>
+<kw name="Input BirthYear" library="resource">
+<arguments>
+<arg>${VALID BirthYear}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthYear</arg>
+<arg>${BirthYear}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:48.254" level="INFO">Typing text '1994' into text field 'name=BirthYear'</msg>
+<status status="PASS" endtime="20160823 11:38:48.371" starttime="20160823 11:38:48.253"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:48.371" starttime="20160823 11:38:48.252"></status>
+</kw>
+<kw name="Input Gender" library="resource">
+<arguments>
+<arg>${valid Gender}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@aria-activedescendant=':d']</arg>
+<arg>${Gender}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:38:48.452" starttime="20160823 11:38:48.373"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:48.452" starttime="20160823 11:38:48.372"></status>
+</kw>
+<kw name="Input RecoveryPhoneNumber" library="resource">
+<arguments>
+<arg>${VALID RecoveryPhoneNumber}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryPhoneNumber</arg>
+<arg>${RecoveryPhoneNumber}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:48.454" level="INFO">Typing text '42334423424' into text field 'name=RecoveryPhoneNumber'</msg>
+<status status="PASS" endtime="20160823 11:38:48.711" starttime="20160823 11:38:48.453"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:48.711" starttime="20160823 11:38:48.452"></status>
+</kw>
+<kw name="Input RecoveryEmailAddress" library="resource">
+<arguments>
+<arg>${VALID RecoveryEmailAddress}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryEmailAddress</arg>
+<arg>${RecoveryEmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:48.712" level="INFO">Typing text 'test@gmail.com' into text field 'name=RecoveryEmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:38:49.035" starttime="20160823 11:38:48.712"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:49.035" starttime="20160823 11:38:48.711"></status>
+</kw>
+<kw name="Submit RegisterButton" library="resource">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=submitbutton</arg>
+</arguments>
+<msg timestamp="20160823 11:38:49.037" level="INFO">Clicking element 'name=submitbutton'.</msg>
+<status status="PASS" endtime="20160823 11:38:49.259" starttime="20160823 11:38:49.036"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:49.259" starttime="20160823 11:38:49.036"></status>
+</kw>
+<kw name="Validation InvalidBirthDay" library="resource">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Hmm, the day doesn't look right. Be sure to use a 2-digit number that is a day of the month.</arg>
+</arguments>
+<msg timestamp="20160823 11:38:49.327" level="INFO">Current page contains text 'Hmm, the day doesn't look right. Be sure to use a 2-digit number that is a day of the month.'.</msg>
+<status status="PASS" endtime="20160823 11:38:49.327" starttime="20160823 11:38:49.260"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:49.327" starttime="20160823 11:38:49.260"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160823 11:38:49.678" starttime="20160823 11:38:49.328"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:38:49.678" critical="yes" starttime="20160823 11:38:33.998"></status>
+</test>
+<test id="s1-s1-t7" name="F1.S2.0008.Invalid-BirthYear">
+<kw name="Open Browser To Register Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20160823 11:38:49.680" level="INFO">Opening browser 'Firefox' to base url 'http://accounts.google.com/SignUp?'</msg>
+<status status="PASS" endtime="20160823 11:39:02.433" starttime="20160823 11:38:49.680"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160823 11:39:02.532" starttime="20160823 11:39:02.434"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:39:02.533" starttime="20160823 11:39:02.533"></status>
+</kw>
+<kw name="Register Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Create your Google Account</arg>
+</arguments>
+<msg timestamp="20160823 11:39:02.659" level="INFO">Page title is 'Create your Google Account'.</msg>
+<status status="PASS" endtime="20160823 11:39:02.660" starttime="20160823 11:39:02.534"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:02.661" starttime="20160823 11:39:02.534"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:02.661" starttime="20160823 11:38:49.680"></status>
+</kw>
+<kw name="Input FirstName" library="resource">
+<arguments>
+<arg>${VALID FirstName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=FirstName</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:02.664" level="INFO">Typing text 'LoremIpsum' into text field 'name=FirstName'</msg>
+<status status="PASS" endtime="20160823 11:39:03.087" starttime="20160823 11:39:02.663"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:03.088" starttime="20160823 11:39:02.662"></status>
+</kw>
+<kw name="Input LastName" library="resource">
+<arguments>
+<arg>${VALID LastName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=LastName</arg>
+<arg>${LastName}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:03.090" level="INFO">Typing text 'LoremIpsum987654321' into text field 'name=LastName'</msg>
+<status status="PASS" endtime="20160823 11:39:04.574" starttime="20160823 11:39:03.089"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:04.574" starttime="20160823 11:39:03.088"></status>
+</kw>
+<kw name="Input GmailAddress" library="resource">
+<arguments>
+<arg>${VALID GmailAddress}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=GmailAddress</arg>
+<arg>${GmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:04.575" level="INFO">Typing text 'LoremIpsum12345678912345678RandomString' into text field 'name=GmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:39:05.302" starttime="20160823 11:39:04.575"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:05.303" starttime="20160823 11:39:04.574"></status>
+</kw>
+<kw name="Input Password" library="resource">
+<arguments>
+<arg>${VALID Password}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=Passwd</arg>
+<arg>${Passwd}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:05.305" level="INFO">Typing text 'test123@Test' into text field 'name=Passwd'</msg>
+<status status="PASS" endtime="20160823 11:39:05.778" starttime="20160823 11:39:05.305"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:05.779" starttime="20160823 11:39:05.304"></status>
+</kw>
+<kw name="Input PasswordAgain" library="resource">
+<arguments>
+<arg>${VALID PasswordAgain}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=PasswdAgain</arg>
+<arg>${PasswdAgain}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:05.781" level="INFO">Typing text 'test123@Test' into text field 'name=PasswdAgain'</msg>
+<status status="PASS" endtime="20160823 11:39:06.020" starttime="20160823 11:39:05.780"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:06.020" starttime="20160823 11:39:05.779"></status>
+</kw>
+<kw name="Input BirthDay" library="resource">
+<arguments>
+<arg>${VALID BirthDay}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthDay</arg>
+<arg>${BirthDay}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:06.022" level="INFO">Typing text '24' into text field 'name=BirthDay'</msg>
+<status status="PASS" endtime="20160823 11:39:06.118" starttime="20160823 11:39:06.021"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:06.119" starttime="20160823 11:39:06.021"></status>
+</kw>
+<kw name="Input BirthMonth" library="resource">
+<arguments>
+<arg>${VALID BirthMonth}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@role='listbox']</arg>
+<arg>${BirthMonth}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:39:06.199" starttime="20160823 11:39:06.120"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:06.199" starttime="20160823 11:39:06.119"></status>
+</kw>
+<kw name="Input BirthYear" library="resource">
+<arguments>
+<arg>1111</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthYear</arg>
+<arg>${BirthYear}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:06.200" level="INFO">Typing text '1111' into text field 'name=BirthYear'</msg>
+<status status="PASS" endtime="20160823 11:39:06.297" starttime="20160823 11:39:06.200"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:06.298" starttime="20160823 11:39:06.199"></status>
+</kw>
+<kw name="Input Gender" library="resource">
+<arguments>
+<arg>${valid Gender}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@aria-activedescendant=':d']</arg>
+<arg>${Gender}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:39:06.379" starttime="20160823 11:39:06.298"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:06.379" starttime="20160823 11:39:06.298"></status>
+</kw>
+<kw name="Input RecoveryPhoneNumber" library="resource">
+<arguments>
+<arg>${VALID RecoveryPhoneNumber}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryPhoneNumber</arg>
+<arg>${RecoveryPhoneNumber}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:06.380" level="INFO">Typing text '42334423424' into text field 'name=RecoveryPhoneNumber'</msg>
+<status status="PASS" endtime="20160823 11:39:06.642" starttime="20160823 11:39:06.380"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:06.643" starttime="20160823 11:39:06.379"></status>
+</kw>
+<kw name="Input RecoveryEmailAddress" library="resource">
+<arguments>
+<arg>${VALID RecoveryEmailAddress}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryEmailAddress</arg>
+<arg>${RecoveryEmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:06.644" level="INFO">Typing text 'test@gmail.com' into text field 'name=RecoveryEmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:39:06.900" starttime="20160823 11:39:06.643"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:06.900" starttime="20160823 11:39:06.643"></status>
+</kw>
+<kw name="Submit RegisterButton" library="resource">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=submitbutton</arg>
+</arguments>
+<msg timestamp="20160823 11:39:06.901" level="INFO">Clicking element 'name=submitbutton'.</msg>
+<status status="PASS" endtime="20160823 11:39:07.063" starttime="20160823 11:39:06.900"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:07.064" starttime="20160823 11:39:06.900"></status>
+</kw>
+<kw name="Validation InvalidBirthYear" library="resource">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Hmm, the date doesn't look right. Be sure to use your actual date of birth.</arg>
+</arguments>
+<msg timestamp="20160823 11:39:07.131" level="INFO">Current page contains text 'Hmm, the date doesn't look right. Be sure to use your actual date of birth.'.</msg>
+<status status="PASS" endtime="20160823 11:39:07.132" starttime="20160823 11:39:07.065"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:07.132" starttime="20160823 11:39:07.064"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160823 11:39:07.435" starttime="20160823 11:39:07.133"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:07.435" critical="yes" starttime="20160823 11:38:49.679"></status>
+</test>
+<test id="s1-s1-t8" name="F1.S2.0009.Invalid-RecoveryEmailAddress">
+<kw name="Open Browser To Register Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:07.437" level="INFO">Opening browser 'Firefox' to base url 'http://accounts.google.com/SignUp?'</msg>
+<status status="PASS" endtime="20160823 11:39:18.140" starttime="20160823 11:39:07.437"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160823 11:39:18.241" starttime="20160823 11:39:18.140"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:39:18.243" starttime="20160823 11:39:18.242"></status>
+</kw>
+<kw name="Register Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Create your Google Account</arg>
+</arguments>
+<msg timestamp="20160823 11:39:18.274" level="INFO">Page title is 'Create your Google Account'.</msg>
+<status status="PASS" endtime="20160823 11:39:18.274" starttime="20160823 11:39:18.244"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:18.274" starttime="20160823 11:39:18.243"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:18.274" starttime="20160823 11:39:07.437"></status>
+</kw>
+<kw name="Input FirstName" library="resource">
+<arguments>
+<arg>${VALID FirstName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=FirstName</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:18.275" level="INFO">Typing text 'LoremIpsum' into text field 'name=FirstName'</msg>
+<status status="PASS" endtime="20160823 11:39:18.579" starttime="20160823 11:39:18.275"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:18.580" starttime="20160823 11:39:18.275"></status>
+</kw>
+<kw name="Input LastName" library="resource">
+<arguments>
+<arg>${VALID LastName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=LastName</arg>
+<arg>${LastName}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:18.581" level="INFO">Typing text 'LoremIpsum987654321' into text field 'name=LastName'</msg>
+<status status="PASS" endtime="20160823 11:39:19.717" starttime="20160823 11:39:18.580"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:19.718" starttime="20160823 11:39:18.580"></status>
+</kw>
+<kw name="Input GmailAddress" library="resource">
+<arguments>
+<arg>${VALID GmailAddress}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=GmailAddress</arg>
+<arg>${GmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:19.719" level="INFO">Typing text 'LoremIpsum12345678912345678RandomString' into text field 'name=GmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:39:20.337" starttime="20160823 11:39:19.719"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:20.337" starttime="20160823 11:39:19.718"></status>
+</kw>
+<kw name="Input Password" library="resource">
+<arguments>
+<arg>${VALID Password}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=Passwd</arg>
+<arg>${Passwd}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:20.339" level="INFO">Typing text 'test123@Test' into text field 'name=Passwd'</msg>
+<status status="PASS" endtime="20160823 11:39:20.845" starttime="20160823 11:39:20.338"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:20.845" starttime="20160823 11:39:20.337"></status>
+</kw>
+<kw name="Input PasswordAgain" library="resource">
+<arguments>
+<arg>${VALID PasswordAgain}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=PasswdAgain</arg>
+<arg>${PasswdAgain}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:20.846" level="INFO">Typing text 'test123@Test' into text field 'name=PasswdAgain'</msg>
+<status status="PASS" endtime="20160823 11:39:21.170" starttime="20160823 11:39:20.846"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:21.171" starttime="20160823 11:39:20.845"></status>
+</kw>
+<kw name="Input BirthDay" library="resource">
+<arguments>
+<arg>${VALID BirthDay}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthDay</arg>
+<arg>${BirthDay}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:21.172" level="INFO">Typing text '24' into text field 'name=BirthDay'</msg>
+<status status="PASS" endtime="20160823 11:39:21.284" starttime="20160823 11:39:21.172"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:21.284" starttime="20160823 11:39:21.171"></status>
+</kw>
+<kw name="Input BirthMonth" library="resource">
+<arguments>
+<arg>${VALID BirthMonth}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@role='listbox']</arg>
+<arg>${BirthMonth}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:39:21.377" starttime="20160823 11:39:21.285"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:21.377" starttime="20160823 11:39:21.284"></status>
+</kw>
+<kw name="Input BirthYear" library="resource">
+<arguments>
+<arg>${VALID BirthYear}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthYear</arg>
+<arg>${BirthYear}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:21.378" level="INFO">Typing text '1994' into text field 'name=BirthYear'</msg>
+<status status="PASS" endtime="20160823 11:39:21.540" starttime="20160823 11:39:21.378"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:21.541" starttime="20160823 11:39:21.377"></status>
+</kw>
+<kw name="Input Gender" library="resource">
+<arguments>
+<arg>${valid Gender}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@aria-activedescendant=':d']</arg>
+<arg>${Gender}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:39:21.648" starttime="20160823 11:39:21.543"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:21.649" starttime="20160823 11:39:21.542"></status>
+</kw>
+<kw name="Input RecoveryPhoneNumber" library="resource">
+<arguments>
+<arg>${VALID RecoveryPhoneNumber}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryPhoneNumber</arg>
+<arg>${RecoveryPhoneNumber}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:21.650" level="INFO">Typing text '42334423424' into text field 'name=RecoveryPhoneNumber'</msg>
+<status status="PASS" endtime="20160823 11:39:21.944" starttime="20160823 11:39:21.650"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:21.944" starttime="20160823 11:39:21.649"></status>
+</kw>
+<kw name="Input RecoveryEmailAddress" library="resource">
+<arguments>
+<arg>test</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryEmailAddress</arg>
+<arg>${RecoveryEmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:21.946" level="INFO">Typing text 'test' into text field 'name=RecoveryEmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:39:22.113" starttime="20160823 11:39:21.945"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:22.113" starttime="20160823 11:39:21.945"></status>
+</kw>
+<kw name="Submit RegisterButton" library="resource">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=submitbutton</arg>
+</arguments>
+<msg timestamp="20160823 11:39:22.115" level="INFO">Clicking element 'name=submitbutton'.</msg>
+<status status="PASS" endtime="20160823 11:39:22.687" starttime="20160823 11:39:22.114"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:22.687" starttime="20160823 11:39:22.113"></status>
+</kw>
+<kw name="Validation InvalidRecoveryEmailAddress" library="resource">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Enter your full email address, including the '@'.</arg>
+</arguments>
+<msg timestamp="20160823 11:39:22.766" level="INFO">Current page contains text 'Enter your full email address, including the '@'.'.</msg>
+<status status="PASS" endtime="20160823 11:39:22.766" starttime="20160823 11:39:22.688"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:22.766" starttime="20160823 11:39:22.687"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160823 11:39:23.086" starttime="20160823 11:39:22.766"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:23.086" critical="yes" starttime="20160823 11:39:07.436"></status>
+</test>
+<test id="s1-s1-t9" name="F1.S2.0010.Invalid-RecoveryPhoneNumber">
+<kw name="Open Browser To Register Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:23.088" level="INFO">Opening browser 'Firefox' to base url 'http://accounts.google.com/SignUp?'</msg>
+<status status="PASS" endtime="20160823 11:39:33.831" starttime="20160823 11:39:23.088"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160823 11:39:33.907" starttime="20160823 11:39:33.831"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:39:33.908" starttime="20160823 11:39:33.907"></status>
+</kw>
+<kw name="Register Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Create your Google Account</arg>
+</arguments>
+<msg timestamp="20160823 11:39:33.941" level="INFO">Page title is 'Create your Google Account'.</msg>
+<status status="PASS" endtime="20160823 11:39:33.941" starttime="20160823 11:39:33.909"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:33.942" starttime="20160823 11:39:33.908"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:33.942" starttime="20160823 11:39:23.088"></status>
+</kw>
+<kw name="Input FirstName" library="resource">
+<arguments>
+<arg>${VALID FirstName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=FirstName</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:33.943" level="INFO">Typing text 'LoremIpsum' into text field 'name=FirstName'</msg>
+<status status="PASS" endtime="20160823 11:39:34.251" starttime="20160823 11:39:33.943"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:34.251" starttime="20160823 11:39:33.942"></status>
+</kw>
+<kw name="Input LastName" library="resource">
+<arguments>
+<arg>${VALID LastName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=LastName</arg>
+<arg>${LastName}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:34.253" level="INFO">Typing text 'LoremIpsum987654321' into text field 'name=LastName'</msg>
+<status status="PASS" endtime="20160823 11:39:35.291" starttime="20160823 11:39:34.253"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:35.291" starttime="20160823 11:39:34.252"></status>
+</kw>
+<kw name="Input GmailAddress" library="resource">
+<arguments>
+<arg>${VALID GmailAddress}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=GmailAddress</arg>
+<arg>${GmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:35.293" level="INFO">Typing text 'LoremIpsum12345678912345678RandomString' into text field 'name=GmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:39:35.962" starttime="20160823 11:39:35.292"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:35.963" starttime="20160823 11:39:35.292"></status>
+</kw>
+<kw name="Input Password" library="resource">
+<arguments>
+<arg>${VALID Password}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=Passwd</arg>
+<arg>${Passwd}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:35.964" level="INFO">Typing text 'test123@Test' into text field 'name=Passwd'</msg>
+<status status="PASS" endtime="20160823 11:39:36.432" starttime="20160823 11:39:35.964"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:36.432" starttime="20160823 11:39:35.963"></status>
+</kw>
+<kw name="Input PasswordAgain" library="resource">
+<arguments>
+<arg>${VALID PasswordAgain}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=PasswdAgain</arg>
+<arg>${PasswdAgain}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:36.434" level="INFO">Typing text 'test123@Test' into text field 'name=PasswdAgain'</msg>
+<status status="PASS" endtime="20160823 11:39:36.732" starttime="20160823 11:39:36.433"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:36.732" starttime="20160823 11:39:36.432"></status>
+</kw>
+<kw name="Input BirthDay" library="resource">
+<arguments>
+<arg>${VALID BirthDay}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthDay</arg>
+<arg>${BirthDay}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:36.733" level="INFO">Typing text '24' into text field 'name=BirthDay'</msg>
+<status status="PASS" endtime="20160823 11:39:36.889" starttime="20160823 11:39:36.733"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:36.889" starttime="20160823 11:39:36.732"></status>
+</kw>
+<kw name="Input BirthMonth" library="resource">
+<arguments>
+<arg>${VALID BirthMonth}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@role='listbox']</arg>
+<arg>${BirthMonth}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:39:37.054" starttime="20160823 11:39:36.890"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:37.054" starttime="20160823 11:39:36.889"></status>
+</kw>
+<kw name="Input BirthYear" library="resource">
+<arguments>
+<arg>${VALID BirthYear}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthYear</arg>
+<arg>${BirthYear}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:37.056" level="INFO">Typing text '1994' into text field 'name=BirthYear'</msg>
+<status status="PASS" endtime="20160823 11:39:37.231" starttime="20160823 11:39:37.055"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:37.231" starttime="20160823 11:39:37.055"></status>
+</kw>
+<kw name="Input Gender" library="resource">
+<arguments>
+<arg>${valid Gender}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@aria-activedescendant=':d']</arg>
+<arg>${Gender}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:39:37.333" starttime="20160823 11:39:37.232"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:37.334" starttime="20160823 11:39:37.232"></status>
+</kw>
+<kw name="Input RecoveryPhoneNumber" library="resource">
+<arguments>
+<arg>11</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryPhoneNumber</arg>
+<arg>${RecoveryPhoneNumber}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:37.335" level="INFO">Typing text '11' into text field 'name=RecoveryPhoneNumber'</msg>
+<status status="PASS" endtime="20160823 11:39:37.493" starttime="20160823 11:39:37.335"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:37.493" starttime="20160823 11:39:37.334"></status>
+</kw>
+<kw name="Input RecoveryEmailAddress" library="resource">
+<arguments>
+<arg>${VALID RecoveryEmailAddress}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryEmailAddress</arg>
+<arg>${RecoveryEmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:37.495" level="INFO">Typing text 'test@gmail.com' into text field 'name=RecoveryEmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:39:37.898" starttime="20160823 11:39:37.494"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:37.898" starttime="20160823 11:39:37.494"></status>
+</kw>
+<kw name="Submit RegisterButton" library="resource">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=submitbutton</arg>
+</arguments>
+<msg timestamp="20160823 11:39:37.900" level="INFO">Clicking element 'name=submitbutton'.</msg>
+<status status="PASS" endtime="20160823 11:39:38.101" starttime="20160823 11:39:37.899"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:38.101" starttime="20160823 11:39:37.898"></status>
+</kw>
+<kw name="Validation InvalidRecoveryPhoneNumber" library="resource">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>This phone number format is not recognized. Please check the country and number.</arg>
+</arguments>
+<msg timestamp="20160823 11:39:38.166" level="INFO">Current page contains text 'This phone number format is not recognized. Please check the country and number.'.</msg>
+<status status="PASS" endtime="20160823 11:39:38.167" starttime="20160823 11:39:38.102"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:38.167" starttime="20160823 11:39:38.101"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160823 11:39:38.412" starttime="20160823 11:39:38.167"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:38.412" critical="yes" starttime="20160823 11:39:23.087"></status>
+</test>
+<doc>A test suite with a single test for invalid register.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" endtime="20160823 11:39:38.414" starttime="20160823 11:37:21.402"></status>
+</suite>
+<suite source="D:\gmail-test-automation\register-page-robot-test\register-tests\valid-register.robot" id="s1-s2" name="Valid-Register">
+<test id="s1-s2-t1" name="F1.S1.0001.Valid-Register">
+<kw name="Open Browser To Register Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${REGISTER URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:38.428" level="INFO">Opening browser 'Firefox' to base url 'http://accounts.google.com/SignUp?'</msg>
+<status status="PASS" endtime="20160823 11:39:50.990" starttime="20160823 11:39:38.427"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20160823 11:39:51.093" starttime="20160823 11:39:50.990"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:39:51.094" starttime="20160823 11:39:51.093"></status>
+</kw>
+<kw name="Register Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Create your Google Account</arg>
+</arguments>
+<msg timestamp="20160823 11:39:51.270" level="INFO">Page title is 'Create your Google Account'.</msg>
+<status status="PASS" endtime="20160823 11:39:51.270" starttime="20160823 11:39:51.097"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:51.271" starttime="20160823 11:39:51.095"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:51.271" starttime="20160823 11:39:38.427"></status>
+</kw>
+<kw name="Input FirstName" library="resource">
+<arguments>
+<arg>${VALID FirstName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=FirstName</arg>
+<arg>${FirstName}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:51.273" level="INFO">Typing text 'LoremIpsum' into text field 'name=FirstName'</msg>
+<status status="PASS" endtime="20160823 11:39:53.445" starttime="20160823 11:39:51.272"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:53.446" starttime="20160823 11:39:51.271"></status>
+</kw>
+<kw name="Input LastName" library="resource">
+<arguments>
+<arg>${VALID LastName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=LastName</arg>
+<arg>${LastName}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:53.447" level="INFO">Typing text 'LoremIpsum987654321' into text field 'name=LastName'</msg>
+<status status="PASS" endtime="20160823 11:39:53.772" starttime="20160823 11:39:53.446"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:53.772" starttime="20160823 11:39:53.446"></status>
+</kw>
+<kw name="Input GmailAddress" library="resource">
+<arguments>
+<arg>${VALID GmailAddress}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=GmailAddress</arg>
+<arg>${GmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:53.774" level="INFO">Typing text 'LoremIpsum12345678912345678RandomString' into text field 'name=GmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:39:54.426" starttime="20160823 11:39:53.774"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:54.426" starttime="20160823 11:39:53.773"></status>
+</kw>
+<kw name="Input Password" library="resource">
+<arguments>
+<arg>${VALID Password}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=Passwd</arg>
+<arg>${Passwd}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:54.428" level="INFO">Typing text 'test123@Test' into text field 'name=Passwd'</msg>
+<status status="PASS" endtime="20160823 11:39:54.688" starttime="20160823 11:39:54.427"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:54.689" starttime="20160823 11:39:54.427"></status>
+</kw>
+<kw name="Input PasswordAgain" library="resource">
+<arguments>
+<arg>${VALID PasswordAgain}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=PasswdAgain</arg>
+<arg>${PasswdAgain}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:54.690" level="INFO">Typing text 'test123@Test' into text field 'name=PasswdAgain'</msg>
+<status status="PASS" endtime="20160823 11:39:54.909" starttime="20160823 11:39:54.690"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:54.910" starttime="20160823 11:39:54.689"></status>
+</kw>
+<kw name="Input BirthDay" library="resource">
+<arguments>
+<arg>${VALID BirthDay}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthDay</arg>
+<arg>${BirthDay}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:54.911" level="INFO">Typing text '24' into text field 'name=BirthDay'</msg>
+<status status="PASS" endtime="20160823 11:39:55.018" starttime="20160823 11:39:54.910"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:55.018" starttime="20160823 11:39:54.910"></status>
+</kw>
+<kw name="Input BirthMonth" library="resource">
+<arguments>
+<arg>${VALID BirthMonth}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@role='listbox']</arg>
+<arg>${BirthMonth}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:39:55.115" starttime="20160823 11:39:55.019"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:55.116" starttime="20160823 11:39:55.018"></status>
+</kw>
+<kw name="Input BirthYear" library="resource">
+<arguments>
+<arg>${VALID BirthYear}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=BirthYear</arg>
+<arg>${BirthYear}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:55.118" level="INFO">Typing text '1994' into text field 'name=BirthYear'</msg>
+<status status="PASS" endtime="20160823 11:39:55.235" starttime="20160823 11:39:55.117"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:55.236" starttime="20160823 11:39:55.116"></status>
+</kw>
+<kw name="Input Gender" library="resource">
+<arguments>
+<arg>${valid Gender}</arg>
+</arguments>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@aria-activedescendant=':d']</arg>
+<arg>${Gender}</arg>
+</arguments>
+<status status="PASS" endtime="20160823 11:39:55.330" starttime="20160823 11:39:55.237"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:55.330" starttime="20160823 11:39:55.236"></status>
+</kw>
+<kw name="Input RecoveryPhoneNumber" library="resource">
+<arguments>
+<arg>${VALID RecoveryPhoneNumber}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryPhoneNumber</arg>
+<arg>${RecoveryPhoneNumber}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:55.332" level="INFO">Typing text '42334423424' into text field 'name=RecoveryPhoneNumber'</msg>
+<status status="PASS" endtime="20160823 11:39:55.605" starttime="20160823 11:39:55.331"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:55.605" starttime="20160823 11:39:55.330"></status>
+</kw>
+<kw name="Input RecoveryEmailAddress" library="resource">
+<arguments>
+<arg>${VALID RecoveryEmailAddress}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=RecoveryEmailAddress</arg>
+<arg>${RecoveryEmailAddress}</arg>
+</arguments>
+<msg timestamp="20160823 11:39:55.607" level="INFO">Typing text 'test@gmail.com' into text field 'name=RecoveryEmailAddress'</msg>
+<status status="PASS" endtime="20160823 11:39:55.883" starttime="20160823 11:39:55.606"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:55.883" starttime="20160823 11:39:55.605"></status>
+</kw>
+<kw name="Submit RegisterButton" library="resource">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>name=submitbutton</arg>
+</arguments>
+<msg timestamp="20160823 11:39:55.884" level="INFO">Clicking element 'name=submitbutton'.</msg>
+<status status="PASS" endtime="20160823 11:39:56.365" starttime="20160823 11:39:55.884"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:56.366" starttime="20160823 11:39:55.883"></status>
+</kw>
+<kw name="Success Register" library="resource">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>id=header-text-div</arg>
+<arg>Privacy and Terms</arg>
+</arguments>
+<msg timestamp="20160823 11:39:56.436" level="INFO">Current page contains element 'id=header-text-div'.</msg>
+<status status="PASS" endtime="20160823 11:39:56.436" starttime="20160823 11:39:56.367"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:56.436" starttime="20160823 11:39:56.366"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20160823 11:39:56.702" starttime="20160823 11:39:56.436"></status>
+</kw>
+<status status="PASS" endtime="20160823 11:39:56.703" critical="yes" starttime="20160823 11:39:38.426"></status>
+</test>
+<doc>A test suite with a single test for valid register.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" endtime="20160823 11:39:56.704" starttime="20160823 11:39:38.420"></status>
+</suite>
+<status status="PASS" endtime="20160823 11:39:56.709" starttime="20160823 11:37:21.302"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="10">Critical Tests</stat>
+<stat fail="0" pass="10">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Register-Tests" pass="10">Register-Tests</stat>
+<stat fail="0" id="s1-s1" name="Invalid-Register" pass="9">Register-Tests.Invalid-Register</stat>
+<stat fail="0" id="s1-s2" name="Valid-Register" pass="1">Register-Tests.Valid-Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

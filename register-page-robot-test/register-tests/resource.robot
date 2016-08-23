@@ -22,12 +22,13 @@ ${VALID BirthYear}   1994
 ${VALID Gender}  Male
 ${VALID RecoveryPhoneNumber}  42334423424
 ${VALID RecoveryEmailAddress}  test@gmail.com
+${Blank Message}  You can't leave this empty.
 
 ${REGISTER URL}    http://${SERVER}/SignUp?
 ${ERROR URL}      http://${SERVER}/SignUp?
 
 *** Keywords ***
-Open Browser To Regsiter Page
+Open Browser To Register Page
     Open Browser    ${REGISTER URL}    ${BROWSER}
     Maximize Browser Window
     Set Selenium Speed    ${DELAY}
@@ -87,6 +88,41 @@ Input RecoveryEmailAddress
 Submit RegisterButton
     Click Element   name=submitbutton
 
-Submit Agree
-    Click Element   xpath=//input[@id='TermsOfService']
+Success Register
+    Page Should Contain Element   id=header-text-div  Privacy and Terms
+
+Validation Blank All Fields
+    Page Should Contain Element   id=errormsg_0_FirstName  ${Blank Message}
+    Page Should Contain Element   id=errormsg_0_LastName  ${Blank Message}
+    Page Should Contain Element   id=errormsg_0_GmailAddress  ${Blank Message}
+    Page Should Contain Element   id=errormsg_0_Passwd  ${Blank Message}
+    Page Should Contain Element   id=errormsg_0_BirthMonth  ${Blank Message}
+    Page Should Contain Element   id=errormsg_0_BirthDay  ${Blank Message}
+    Page Should Contain   ${Blank Message}
+
+Validation PasswordUnmatch
+    Page Should Contain    These passwords don't match. Try again?
+
+Validation UsernameIsTaken
+    Page Should Contain    That username is taken. Try another.
+
+Validation PasswordLessThan8Characters
+    Page Should Contain    Short passwords are easy to guess. Try one with at least 8 characters.
+
+Validation WeakPassword
+    Page Should Contain     Common words are easy to guess. Try again?
+
+Validation InvalidBirthDay
+    Page Should Contain     Hmm, the day doesn't look right. Be sure to use a 2-digit number that is a day of the month.
+
+Validation InvalidBirthYear
+    Page Should Contain     Hmm, the date doesn't look right. Be sure to use your actual date of birth.
+
+Validation InvalidRecoveryEmailAddress
+    Page Should Contain     Enter your full email address, including the '@'.
+
+Validation InvalidRecoveryPhoneNumber
+    Page Should Contain     This phone number format is not recognized. Please check the country and number.
+
+
 
