@@ -29,7 +29,7 @@ class TestGoogleGhostDriver(unittest.TestCase):
         # Enter text field birthday year
         self.driver.find_element_by_name("BirthYear").send_keys("1994")
         # Enter text field Gender
-        self.driver.find_element_by_xpath("//div[@aria-activedescendant=':d']").send_keys("Male")
+        self.driver.find_element_by_xpath("//div[@id='Gender']/div").send_keys("Male")
         # Enter text field Recovery Phone Number
         self.driver.find_element_by_name("RecoveryPhoneNumber").send_keys("123456789")
         # Enter text field Recovery Email Address

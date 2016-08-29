@@ -9,7 +9,7 @@ Library  Selenium2Library
 *** Variables ***
 ${RandomString}=         Generate Random String    10    [LETTERS]
 ${SERVER}         accounts.google.com
-${BROWSER}        Firefox
+${BROWSER}        Chrome
 ${DELAY}          0
 ${VALID FirstName}     LoremIpsum
 ${VALID LastName}  LoremIpsum987654321
@@ -75,7 +75,7 @@ Input BirthYear
 
 Input Gender
     [Arguments]    ${Gender}
-    Press Key   xpath=//div[@aria-activedescendant=':d']   ${Gender}
+    Press Key   xpath=//div[@id='Gender']/div   ${Gender}
 
 Input RecoveryPhoneNumber
     [Arguments]    ${RecoveryPhoneNumber}
@@ -123,6 +123,3 @@ Validation InvalidRecoveryEmailAddress
 
 Validation InvalidRecoveryPhoneNumber
     Page Should Contain     This phone number format is not recognized. Please check the country and number.
-
-
-
