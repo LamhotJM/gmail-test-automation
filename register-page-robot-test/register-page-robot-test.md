@@ -16,6 +16,7 @@ Web testing with Robot Framework and Selenium2Library:
 * https://bitbucket.org/robotframework/webdemo/wiki/Home
 * https://github.com/robotframework/robotframework/blob/master/INSTALL.rst
 * http://robotframework.org/Selenium2Library/doc/Selenium2Library.html#Introduction (Element Library)
+* https://github.com/franz-see/Robotframework-Database-Library
 
 ## Database Testing  
 - pip install PyMySQL
