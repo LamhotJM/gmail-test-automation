@@ -22,7 +22,8 @@ Web testing with Robot Framework and Selenium2Library:
 - pip install robotframework-databaselibrary
 
 ## API testing
-* pip install requests
+* pip install -U requests
+* pip install -U robotframework-requests
 
 ## Running
 -  Enter to folder `register-page-robot-test` 
