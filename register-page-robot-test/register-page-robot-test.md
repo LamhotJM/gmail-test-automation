@@ -1,5 +1,8 @@
 ## Installation 
-- Enter to `register-page-robot-test` folder
+- Install python 2.7 [link](https://www.python.org/downloads/)
+-  `pip`
+-  `pip installl virtualenv`
+- cd `register-page-robot-test`
 - `virtualenv env`
 - `source env/scripts/activate`
 - `pip install -r requirements.txt`
@@ -29,6 +32,7 @@ Web testing with Robot Framework and Selenium2Library:
 ## Running
 -  Enter to folder `register-page-robot-test` 
 - `python -m robot.run register-tests`
+- spesific test suite `python -m robot.run register-tests\invalid-register.robot`
 
 ## Testing Plan
 
