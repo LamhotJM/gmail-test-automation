@@ -2,9 +2,9 @@
 - Install python 2.7 [link](https://www.python.org/downloads/)
 -  `pip`
 -  `pip installl virtualenv`
-- cd `register-page-robot-test`
+-  `cd register-page-robot-test`
 - `virtualenv env`
-- `source env/scripts/activate`
+- `source env\scripts\activate`
 - `pip install -r requirements.txt`
 
 ## Description
