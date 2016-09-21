@@ -1,11 +1,13 @@
 ## Installation 
 - Install python 2.7 [link](https://www.python.org/downloads/)
--  `pip`
--  `pip installl virtualenv`
--  `cd register-page-robot-test`
+- `pip`
+- `pip installl virtualenv`
+- `cd register-page-robot-test`
 - `virtualenv env`
 - `source env\scripts\activate`
 - `pip install -r requirements.txt`
+- Download your own driver exp.Chrome [Chrome Driver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+- Put on register-page-robot-tes folder
 
 ## Description
 Web testing with Robot Framework and Selenium2Library:
